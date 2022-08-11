@@ -1,1 +1,3 @@
 Hola, estoy editand esto con nano.
+
+Segunda linea compras.txt editada.
