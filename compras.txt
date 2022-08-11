@@ -5,3 +5,5 @@ Segunda linea compras.txt editada.
 Tercera linea para commitear con commit -am
 
 Cuarta linea para hacer push con credential helper
+
+En esta linea no deberia pedirme ni usuario ni contrasenia
