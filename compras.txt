@@ -1,3 +1,5 @@
 Hola, estoy editand esto con nano.
 
 Segunda linea compras.txt editada.
+
+Tercera linea para commitear con commit -am
