@@ -1,0 +1,21 @@
+
+p{
+    text-align: justify;
+    font-family: calibri;
+
+}
+
+#foto_cv{
+    float: left;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    justify-content: space-evenly;
+
+}
+
+
+
