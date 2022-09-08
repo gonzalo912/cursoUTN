@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>EJERCICIO 2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <script type="text/javascript">
+
+        /*
+           Haciendo uso de los bucles, 
+           recorrer un array de números y determinar cual es el mayor
+        */
+        let arr = [];
+        let maximo = -99999999;
+        let ok = true;
+        let n;
+        let index = 0;
+
+        alert("Ingrese numeros y una letra para terminar");
+
+        while (ok){
+            n = parseInt(prompt('Ingrese numero: '), '');
+            if (isNaN(n)){
+                ok = false;
+            } else {
+                arr[index] = n;
+            }
+            index++;
+        }
+
+        for(let i=0; i < arr.length; i++){
+            if (arr[i] >= maximo){
+                maximo = arr[i];
+            }
+        }
+
+        document.write(maximo);
+
+    </script>
+    
+</body>
+</html>
