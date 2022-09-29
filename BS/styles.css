@@ -1,0 +1,26 @@
+body {
+    font-family: 'Prompt', sans-serif;
+}
+
+.container-fluid {
+    margin: 0;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+#btn-modal{
+    background-color: red;
+    width: 300px;
+    height: 350px;
+}
+
+#card {
+    width: 300px;
+    height: 350px;
+}
+
+#carousel{
+    width: 300px;
+    height: 350px;
+}
