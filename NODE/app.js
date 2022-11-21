@@ -3,9 +3,11 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+require('dotenv').config();
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var contactoRouter = require('./routes/contacto');
 
 var app = express();
 
@@ -21,6 +23,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/contacto', contactoRouter);
+
 
 app.get('/novedades', function(req, res){
   res.send('SECCION NOVEDADES');
@@ -28,7 +32,7 @@ app.get('/novedades', function(req, res){
 
 
 app.get('/nosotros', function(req, res){
-  res.send('SECCION NOSOTROS');
+  res.render('nosotros');
 });
 
 app.get('/prode', function(req, res){
@@ -36,7 +40,7 @@ app.get('/prode', function(req, res){
 });
 
 app.get('/contacto', function(req, res){
-  res.send('SECCION CONTACTO');
+  res.render('contacto');
 });
 
 // catch 404 and forward to error handler
