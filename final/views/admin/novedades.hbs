@@ -34,7 +34,8 @@
                         <td class="text-center">
                             <a href="/admin/novedades/editar/{{id}}" title="Editar" class="btn btn-sm btn-secondary">
                             <i class="fa fa-pencil"></i></a>
-                            <a href="/admin/novedades/eliminar/{{id}}" title="Eliminar" class="btn btn-sm btn-secondary">
+                            <a href="/admin/novedades/eliminar/{{id}}" title="Eliminar" class="btn btn-sm btn-secondary" onclick="
+                            return confirm('Estas seguro de que querés eliminar esta noticia? Esta acción no se puede deshacer.')">
                             <i class="fa fa-trash"></i></a>
                         </td>
                     </tr>
@@ -44,3 +45,6 @@
         </div>
     </div>
 </div>
+
+
+

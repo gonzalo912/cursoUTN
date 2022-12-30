@@ -11,7 +11,6 @@ router.get('/', function (req, res, next){
 router.post('/', async(req, res, next) => {
     try{
         console.log(req.body);
-        req.session.sesion = false;
         var usuario = req.body.usuario;
         var password = req.body.password;
         var data = await usuariosModel.getUserByUsernameAndPassword(usuario, password);
@@ -34,11 +33,9 @@ router.post('/', async(req, res, next) => {
 
 
 router.get('/logout', function (req, res, next) {
-    req.session.destroy();
-    req.session.sesion = false;
+    req.session.destroy()
     res.render('admin/login', {
         layout: 'layout',
- 
     });
 });
 
