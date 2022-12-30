@@ -1,0 +1,55 @@
+<div class="container">
+    <nav class="navbar bg-body-tertiary">
+        <form class="container-fluid" method="post" id="search">
+            <div class="input-group">
+                <input type="text" name="busqueda" class="form-control" placeholder="Buscar en novedades">
+                <button class="btn btn-sm btn-secondary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </form>
+    </nav>
+</div>
+
+{{#if busqueda}}
+<h1 class="text-center pt-3">Resultados para "{{busqueda}}":</h1>
+{{else}}
+<h1 class="text-center pt-3">ULTIMAS NOVEDADES</h1>
+{{/if}}
+
+
+
+<div class="container">
+    {{#each ult}}
+    <div class="row py-3">
+        {{#each this}}
+        <div class="col py-3 px-3">
+            <div class="rounded-3 novedades">
+                <div class="text-center novedad">
+                    <div class="modal fade" id="modal{{ id }}" data-backdrop="static" data-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">{{titulo}}</h5>
+                                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body" style="">
+                                    <h2>{{subtitulo}}</h2>
+                                    <p>{{cuerpo}}</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#modal{{ id }}"><h2>{{this.titulo}}</h2></a>
+                    <h5>{{this.subtitulo}}</h5>
+                    <p>{{this.cuerpo}}</p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    {{/each}}
+</div>

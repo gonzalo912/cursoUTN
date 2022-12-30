@@ -1,0 +1,126 @@
+/* font-family: 'Alfa Slab One', cursive;
+
+font-family: 'Open Sans', sans-serif; */
+
+html{
+  scroll-behavior: smooth;
+}
+
+nav {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-custom{
+  background-color: #a0a0a0;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.hero{
+
+  background: url(./../images/qatar1.jpeg);
+  background-size: cover;
+  min-height: 732px;
+  height: 50vh;
+  opacity: 1;
+}
+
+h1 {
+  font-family: 'Alfa Slab One', cursive;
+  color: #772b49;
+  /* color: #811d51; */
+}
+
+h2{
+  font-family: 'Alfa Slab One', cursive;
+  color: #772b49;
+}
+
+.lista-novedades{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lista-novedades li{
+  margin: 4px 0;
+}
+
+.lista-novedades li a{
+  background-color: #fff;
+  font-family: 'Alfa Slab One', cursive;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #a0a0a0;
+  transition: all .2s ease-in-out;
+  display: block;
+}
+
+.lista-novedades li a:hover{
+  color: #212529;
+  background-color: #edece3;
+
+}
+
+.lista-novedades li a img {
+  width: 120px;
+  height: 50px;
+  filter: grayscale();
+  transition: all .2s ease-in-out;
+  margin-right: 1rem;
+  opacity: 0.7;
+}
+
+.lista-novedades li a:hover img{
+  filter: none;
+  margin-right: 1.4rem;
+  opacity: 1;
+}
+
+.testimonios{
+  background-color: #edece3;
+  padding-bottom: 4rem !important;
+}
+
+.testimonio{
+  text-align: center;
+  padding: 50px 20px;
+  overflow: hidden;
+  height: 200px;
+}
+
+.novedades{
+  background-color: #edece3;
+  height: 400px;
+  width: 600px;
+  overflow: hidden;
+}
+
+.novedad{
+  display: block;
+  margin: 10%;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis; 
+}
+
+footer{
+  background-color:#edece3;
+}
+
+footer p{
+  color: #212529;
+  opacity: 0.5;
+}
+
+.mapa iframe {
+  width: 100%;
+  aspect-ratio: 1.2;
+}
+
+.renglon{
+  width: 500px;
+  border-color: #772b49;
+}

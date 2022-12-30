@@ -1,0 +1,26 @@
+<div class="container"> 
+
+</div>
+
+<div class="d-flex justify-content-center">
+  <form action="/contacto" method="post">
+    <div class="renglon mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Email</label>
+      <input type="email" class="form-control" name="email" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Asunto</label>
+      <input type="text" class="form-control renglon" name="asunto" placeholder="Motivo de contacto">
+    </div>
+    <div class="renglon mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+      <input type="text" class="form-control" name="nombre" placeholder="Gonzalo">
+    </div>
+    <div class="mb-3 renglon">
+      <label for="exampleFormControlTextarea1" class="form-label">Deja tu mensaje acá</label>
+      <textarea class="form-control" name="texto" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</div>
+{{message}}
