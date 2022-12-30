@@ -11,14 +11,14 @@ router.post('/', async (req, res, next) => {
 
     var asunto = req.body.asunto;
     var mail = req.body.email;
-    var comentarios = req.body.comentarios;
+    var comentarios = req.body.texto;
     var name = req.body.nombre;
 
     var obj = {
         to: 'olmosgonzalo@gmail.com',
         subject: asunto,
-        html: name + "Te ha enviado un mensaje:\n" +
-        comentarios + "\n" + "mail de contacto: " + mail
+        html: name + " te ha enviado un mensaje:<br><br>"  + "  " +
+        comentarios + "<br><br>Mail de contacto: " + mail
     };
 
     var transport = nodemailer.createTransport({

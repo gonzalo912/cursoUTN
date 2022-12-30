@@ -14,16 +14,16 @@
 
 {{!-- NOVEDADES --}}
 <div class="row py-4" id="novedades">
-    <div class="col-md-5 offset-md-2 py-3">
-            <h2>Novedades</h2>
-            <ul class="lista-novedades">
-                {{#each novedades}}
-                <li>
-                    <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#modal{{ id }}">
-                        <img src="./../images/qatar2.jpeg" alt="FOTO">{{titulo}}</a>
-                </li>
-                {{/each}}
-            </ul>
+    <div class="col-md-5 offset-md-1 py-3">
+        <h2>Novedades</h2>
+        <ul class="lista-novedades">
+            {{#each novedades}}
+            <li>
+                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#modal{{ id }}">
+                    <img src="./../images/qatar2.jpeg" alt="FOTO">{{titulo}}</a>
+            </li>
+            {{/each}}
+        </ul>
     </div>
 
     {{!-- MODAL --}}
@@ -51,7 +51,7 @@
     {{/each}}
 
     {{!-- TESTIMONIOS --}}
-    <div class="col-md-3 my-3">
+    <div class="col-md-3 offset-md-1 my-3">
         <div class="rounded py-5 testimonios">
             <h2 class="text-center">Testimonios</h2>
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
@@ -91,11 +91,11 @@
 </div>
 
 <div class="row my-5">
-    <div class="col-md-5 offset-md-1 my-3">
+    <div class="col-md-5 offset-md-1 py-3">
         <h2>Nosotros</h2>
         <div class="rounded py-5 testimonios">
             <div class="testimonio">
-                <p>somos un grupo de personas emocionadas con el mundial y con ganas <br>
+                <p>Somos un grupo de personas emocionadas con el mundial y con ganas <br>
                     de traerle a la gente una forma de ganar según cuánto sepan de futbol. <br>
                     Cuidado, puede haber sorpresas. <br>
                 </p>
@@ -103,16 +103,14 @@
         </div>
     </div>
 
-    <div class="col-md-4 my-3">
+    <div class="col-md-3 offset-md-1 my-3">
         <div>
             <h2>Visitanos</h2>
             <div class="mapa">
-                <iframe src="https://www.google.com/maps/
-                    embed?pb=!1m18!1m12!1m3!1d3283.469097832709!2d-58.
-                    37041728498347!3d-34.617584080455934!2m3!1f0!2f0!3f0!
-                    3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca98f0058631%3
-                    A0x98688c83fc192f2e!2sFacultad%20de%20Ingenier%C3%ADa!
-                    5e0!3m2!1ses-419!2sar!4v1668128112463!5m2!1ses-419!2sar"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.5232776984903!2d51.48854161553768!3d25.42076348379267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45e79240aff901%3A0x78b22e86c6d52895!2sEstadio%20Lusail!5e0!3m2!1ses!2sar!4v1672416977025!5m2!1ses!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>

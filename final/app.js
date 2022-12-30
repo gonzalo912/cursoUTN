@@ -56,7 +56,7 @@ app.use('/admin/novedades', secured, adminRouter);
 app.use('/novedades', novedadesRouter);
 
 app.get('/prode', function(req, res, next){
-  res.render('<h4>PROXIMAMENTE</h4>');
+  res.render('prode', );
 });
 
 
